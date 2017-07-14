@@ -1,0 +1,16 @@
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\CacheService.exe.config
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\obj\Debug\CacheService.csprojResolveAssemblyReference.cache
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\CacheService.exe
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\CacheService.pdb
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\Apache.Ignite.AspNet.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\Apache.Ignite.Core.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\Apache.Ignite.EntityFramework.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\Apache.Ignite.Linq.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\Apache.Ignite.Log4Net.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\Apache.Ignite.NLog.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\EntityFramework.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\log4net.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\NLog.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\bin\Debug\Remotion.Linq.dll
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\obj\Debug\CacheService.exe
+C:\Users\t-xuqiul\Desktop\Ignite_Accelerate_Aggregate\CacheService\CacheService\obj\Debug\CacheService.pdb
