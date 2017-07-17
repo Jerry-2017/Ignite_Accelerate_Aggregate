@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CacheService.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Apache.Ignite.AspNet">
       <HintPath>..\lib\Apache.Ignite.AspNet.dll</HintPath>
@@ -71,6 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PreLoad.cs" />
+    <Compile Include="Query.cs" />
+    <Compile Include="QueryFeed.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
