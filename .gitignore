@@ -1,6 +1,7 @@
 *.exe
-CacheService/CacheService/obj
-CacheService/CacheService/bin
+
+Cache/CacheService/obj
+Cache/CacheService/bin
 
 *.pdb
 *.cache
@@ -13,25 +14,17 @@ ehthumbs.db
 
 ehthumbs_vista.db
 
-
-
 # Dump file
 
 *.stackdump
-
-
 
 # Folder config file
 
 Desktop.ini
 
-
-
 # Recycle Bin used on file shares
 
 $RECYCLE.BIN/
-
-
 
 # Windows Installer files
 
@@ -42,8 +35,6 @@ $RECYCLE.BIN/
 *.msm
 
 *.msp
-
-
 
 # Windows shortcuts
 

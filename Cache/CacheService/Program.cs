@@ -14,7 +14,7 @@ namespace CacheService
     {
         static void Main(string[] args)
         {
-            using (var ignite = Ignition.Start())
+            using (var ignite = Ignition.StartFromApplicationConfiguration())
             {
                 var cache = ignite.GetOrCreateCache<int, string>("myCache");
 
