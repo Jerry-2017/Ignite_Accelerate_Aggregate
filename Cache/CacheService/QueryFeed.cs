@@ -5,8 +5,11 @@ using System.Text;
 
 namespace CacheService
 {
+
+
     class QueryFeed
     {
+        private List<int> Q
         static void Main(string[] args)
         {
             // For test 
@@ -16,5 +19,6 @@ namespace CacheService
         {
             return "NotImplement";
         }
+
     }
 }
