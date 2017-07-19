@@ -23,7 +23,7 @@ namespace CacheService
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="test")]
-	public partial class MSSQLData : System.Data.Linq.DataContext
+	public partial class CustomerDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -32,31 +32,31 @@ namespace CacheService
     partial void OnCreated();
     #endregion
 		
-		public MSSQLData() : 
+		public CustomerDataContext() : 
 				base(global::CacheService.Properties.Settings.Default.testConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public MSSQLData(string connection) : 
+		public CustomerDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public MSSQLData(System.Data.IDbConnection connection) : 
+		public CustomerDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public MSSQLData(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public CustomerDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public MSSQLData(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public CustomerDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

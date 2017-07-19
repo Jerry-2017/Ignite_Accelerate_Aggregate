@@ -26,10 +26,30 @@ namespace CacheService.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=T-XUQIUL;Initial Catalog=test;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=T-JIALZ-WORK;Initial Catalog=test;Integrated Security=True")]
+        public string testConnectionString1 {
+            get {
+                return ((string)(this["testConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=T-JIALZ-WORK;Initial Catalog=test;Integrated Security=True")]
         public string testConnectionString {
             get {
                 return ((string)(this["testConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=T-JIALZ-WORK;Initial Catalog=msdb;User ID=test;Password=123456abCDE")]
+        public string testConnectionString2 {
+            get {
+                return ((string)(this["testConnectionString2"]));
             }
         }
     }

@@ -9,7 +9,6 @@ namespace CacheService
 
     class QueryFeed
     {
-        private List<int> Q
         static void Main(string[] args)
         {
             // For test 
