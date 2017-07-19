@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="test" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="test" Class="MSSQLData" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=T-XUQIUL;Initial Catalog=test;Integrated Security=True" SettingsObjectName="CacheService.Properties.Settings" SettingsPropertyName="testConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Customer" Member="Customers">
     <Type Name="Customer">

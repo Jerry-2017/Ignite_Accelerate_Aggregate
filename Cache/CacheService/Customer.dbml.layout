@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="DataClasses1">
-  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <DataContextMoniker Name="/MSSQLData" />
   <nestedChildShapes>
     <classShape Id="9f69273b-a784-4567-a926-f433097069ac" absoluteBounds="9, 2.875, 2, 1.3862939453125">
-      <DataClassMoniker Name="/DataClasses1DataContext/Customer" />
+      <DataClassMoniker Name="/MSSQLData/Customer" />
       <nestedChildShapes>
         <elementListCompartment Id="e5ffe3f3-6fd0-4f11-8e22-a813045d3554" absoluteBounds="9.015, 3.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
