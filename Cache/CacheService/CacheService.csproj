@@ -76,10 +76,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.designer.cs">
+    <Compile Include="CustomerAccounts.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Customer.dbml</DependentUpon>
+      <DependentUpon>CustomerAccounts.dbml</DependentUpon>
     </Compile>
     <Compile Include="PreLoad.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -96,9 +96,9 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Customer.dbml">
+    <None Include="CustomerAccounts.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Customer.designer.cs</LastGenOutput>
+      <LastGenOutput>CustomerAccounts.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -110,8 +110,8 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Customer.dbml.layout">
-      <DependentUpon>Customer.dbml</DependentUpon>
+    <None Include="CustomerAccounts.dbml.layout">
+      <DependentUpon>CustomerAccounts.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

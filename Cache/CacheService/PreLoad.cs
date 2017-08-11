@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Apache.Ignite.Core;
 using Apache.Ignite.Core.Cache;
+using System.Diagnostics;
 
 namespace CacheService
 {
@@ -13,16 +14,28 @@ namespace CacheService
         {
             // Test 
         }
-        public void Process(ICache<int, Customer> cache)
+        public void Process(ICache<long, CustomerAccount_ignite> cache)
         {
-            CustomerDataContext data = new CustomerDataContext();
-            int cnt = 0;
-            foreach (var customer in data.Customers)
+            CustomerAccountsDataContext data = new CustomerAccountsDataContext();
+            long cnt = 0;
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            foreach (var customer in data.CustomerAccounts)
             {
+                var customer_ignite = new CustomerAccount_ignite(customer);
                 //Console.WriteLine("CustomerName {0}", customer.CustomerName);
-                cache.Put(cnt, customer);
+                cache.Put(cnt, customer_ignite);
                 cnt += 1;
+                //if (cnt % 1000 == 0)
+                //    Console.Write("-");
+                //if (cnt == 100000)
+                //    break;
             }
+            stopwatch.Stop();
+            long elapsed_time = stopwatch.ElapsedMilliseconds;
+            Console.WriteLine("Finish Data Loading\n");
+            Console.WriteLine("Preload Time on {0} rows using {1} ms", cnt, elapsed_time);
+            
         }
     }
 }

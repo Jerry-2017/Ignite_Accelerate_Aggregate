@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="test" Class="CustomerAccountsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=T-XUQIUL;Initial Catalog=test;Integrated Security=True" SettingsObjectName="CacheService.Properties.Settings" SettingsPropertyName="testConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CustomerAccounts" Member="CustomerAccounts">
+    <Type Name="CustomerAccount">
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AccountNumber" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="AdvertiserId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AgencyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SalesHouseCustomerId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PreferredUserId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CustomerTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="CustomerNumber" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="AgencyName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PaymentOption" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PaymentOptionId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="PaymentInstrumentTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="SecondaryPaymentInstrumentTypeId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="PaymentInstrumentTypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SecondaryPaymentInstrumentTypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PreferredBillToPaymentInstrumentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SecondaryBillToPaymentInstrumentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BillToCustomerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BillToCustomerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CurrencyId" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SAPID" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="AccountTimeZoneId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="CurrencyType" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="AccountModifiedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CustomerModifiedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

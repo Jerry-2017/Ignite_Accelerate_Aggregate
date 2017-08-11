@@ -9,6 +9,7 @@ using Apache.Ignite.Core.Cache.Configuration;
 using Apache.Ignite.Core.Transactions;
 using System.Configuration;
 using Apache.Ignite.Core.Cluster;
+using System.Diagnostics;
 
 namespace CacheService
 {
@@ -27,10 +28,23 @@ namespace CacheService
                 Console.WriteLine("{0}", t1.ToString());
                 PreLoad preload = new PreLoad();
                 Query query = new Query();
-                var cache = ignite.GetOrCreateCache<int, Customer>("Cache");
-                preload.Process(cache);
-                query.Process(cache);
 
+                var cache = ignite.GetOrCreateCache<long, CustomerAccount_ignite>(new CacheConfiguration("Cache", typeof(CustomerAccount_ignite)));//"Cache"
+                preload.Process(cache);
+
+                long id = 1;
+                int times = 1000000;
+                var stopwatch = new Stopwatch();
+                stopwatch.Start();
+                for (int i=0;i<times;i++)
+                {
+                    query.Process(cache,id);
+                    id = (id + 3) % 100000;
+                }
+                stopwatch.Stop();
+                long elapsed_time = stopwatch.ElapsedMilliseconds;
+                Console.WriteLine("Finish SQL querying\n");
+                Console.WriteLine("Preload Time on {0} times using {1} ms", times, elapsed_time);
                 //var cache = ignite.GetOrCreateCache<int, string>("myCache");
                 // Store keys in cache (values will end up on different cache nodes).
                 /*for (int i = 0; i < 10; i++)
