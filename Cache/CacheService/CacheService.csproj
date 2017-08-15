@@ -76,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper.cs" />
     <Compile Include="CustomerAccounts.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -37,7 +37,7 @@ namespace CacheService
     #endregion
 		
 		public CustomerAccountsDataContext() : 
-				base(global::CacheService.Properties.Settings.Default.testConnectionString3, mappingSource)
+				base(global::CacheService.Properties.Settings.Default.testConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

@@ -30,7 +30,7 @@ namespace CacheService
 
             foreach (var account in accounts)
             {
-                Console.WriteLine("{0} {1} {2}", account.Value.AccountId, account.Value.AccountName, account.Value.CustomerName);
+                //Console.WriteLine("{0} {1} {2}", account.Value.AccountId, account.Value.AccountName, account.Value.CustomerName);
             }
 
             /*
